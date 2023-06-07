@@ -1,0 +1,29 @@
+
+
+../ --> navigates from a diferent folders or / (root)
+but best its to cut the root and just put the name if
+the folder and send to the professor.
+---
+Convert images to base64
+---
+<br>
+<nav></nav>
+<div></div> new blick
+<hr>
+<strong>Lorem</strong><b> lorem --> gives you text
+
+Best way to use css its to make all in one page than link 
+to all the other ones
+
+There is 2 fonts sizes PX (Always the same size, will not change with 
+the users font) and EM (relatives to the size) and 
+REM(depends the parents size) 
+
+<h1> text-align; center</h1> 
+OR
+header
+text-align: justify; (center, right, left, justify)
+
+header
+CSS>restaurant
+link rel="stylesheet
