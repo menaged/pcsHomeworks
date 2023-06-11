@@ -27,3 +27,58 @@ text-align: justify; (center, right, left, justify)
 header
 CSS>restaurant
 link rel="stylesheet
+
+---
+Do not mix html and css
+---
+
+a:visited {color: gray;}
+a: {text decoration: none;} ->take out the underline
+a:hover {color: yellow;}
+a:active {color: red;}
+a:focus {color: blue}
+
+PAY ATTENTION ON THE ORDER!!!
+---
+
+BOX MODEL
+
+margin: 1em 2em 3em; top right bottom left
+margin: auto; -> fit the web page
+overflow: auto;
+overfllow: scroll;
+overfllow-y: scroll;
+overfllow: hidden;
+box-sizing: border-box; BEST
+
+2 types of elements
+in-line elements and box size
+
+max-width: 800px;
+
+---
+
+#copy {font-style: italic} ->id selector
+<section id="copy">
+Only one
+
+.menu-item{color: yellow;} ->class selector
+Many as you want
+
+span
+.inline-list{display: inline}
+
+HW list of links so put in a list <nav>
+
+How does the text flow around? 
+.menu-item img{
+float: left;
+margin-right: 1em;
+margin-bottom: .50em;
+
+clear: left;
+clear-fix {clear-both}
+
+
+
+
