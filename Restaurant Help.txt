@@ -8,8 +8,8 @@ Convert images to base64
 ---
 <br>
 <nav></nav>
-<div></div> new blick
-<hr>
+<div></div> new block
+<hr> Makes a line
 <strong>Lorem</strong><b> lorem --> gives you text
 
 Best way to use css its to make all in one page than link 
@@ -33,8 +33,8 @@ Do not mix html and css
 ---
 
 a:visited {color: gray;}
-a: {text decoration: none;} ->take out the underline
-a:hover {color: yellow;}
+a: {text decoration: none;} ->Take out the underline
+a:hover {color: yellow;} ->Pass the mouse on top
 a:active {color: red;}
 a:focus {color: blue}
 
@@ -57,13 +57,15 @@ in-line elements and box size
 max-width: 800px;
 
 ---
+CLASS
 
 #copy {font-style: italic} ->id selector
 <section id="copy">
 Only one
 
-.menu-item{color: yellow;} ->class selector
-Many as you want
+<section class="menu-item"> This is how to make a class
+.menu-item{color: yellow;} This is how to call a class
+->class selector. Many as you want
 
 span
 .inline-list{display: inline}
@@ -79,6 +81,25 @@ margin-bottom: .50em;
 clear: left;
 clear-fix {clear-both}
 
+---
+
+clear: left; Stops the text to go on top to each one
+class= xxx clear-fix
+
+float: left;
+display: inline-block;
+
+.picture: hover {z-index: 1; transform: scale(1.5)}
+
+margin-left: 10em;	
+
+white-space : nowrap;
+
+backround-size: contain; (much as possible)
+backround-size: cover;
+
+box-sizing: border-box;
+margin-top: 1em
 
 
 

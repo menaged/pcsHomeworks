@@ -1,0 +1,33 @@
+        header {
+            text-align: center;
+            border: 30px double brown;
+          
+        }
+
+        html {
+            background-color:
+                salmon;
+        }
+
+        h2 {
+            font-style: italic;
+        }
+
+        #copy {
+            font-style: italic;
+            color: blue;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:focus {
+            color: cornsilk;
+        }
+
+        a:hover {
+            color: cornsilk;
+        }
+
+
