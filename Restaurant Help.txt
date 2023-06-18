@@ -38,7 +38,7 @@ a:hover {color: yellow;} ->Pass the mouse on top
 a:active {color: red;}
 a:focus {color: blue}
 
-PAY ATTENTION ON THE ORDER!!!
+PAY ATTENTION TO THE ORDER!!!
 ---
 
 BOX MODEL
@@ -49,7 +49,7 @@ overflow: auto;
 overfllow: scroll;
 overfllow-y: scroll;
 overfllow: hidden;
-box-sizing: border-box; BEST
+box-sizing: border-box; BEST 
 
 2 types of elements
 in-line elements and box size
@@ -101,5 +101,42 @@ backround-size: cover;
 box-sizing: border-box;
 margin-top: 1em
 
+a:focus{ color:lightblue;} focus have to be before active and hover
+a:hover{color: yellow;}
+a:active:{color: red;} ->means that you ca press
 
+---
+
+.button:active{
+backround-images: url("images...");}
+height 162px;
+whith 159px;
+cursor: pointer;
+
+<link rel="icon" href="images"...>
+realfavicongenerator.com 
+htmlcolorcodes.com
+See truth color: rgba(63,94,25,.5); this is how to do it last number .5 or something
+color:#3f5e197f same color as before
+
+opacity: .5 Also is fadding the icon (image)
+
+meyerweb.com/eric/tools
+css normalizer
+getbooststrap.com 
+
+select everything 
+*{font-style: italic;}
+
+cdn ->its a normalizer
+
+---
+
+AUDIO & VIDEO
+
+<audio>src="media/maale" controls</audio>
+<audio>src="media/maale" controls autoplay></audio> start by itself but the browsers stops it
+<audio>src="media/maale" controlsauto play loop</audio>
+
+<video src="media..."> controls></video>
 
