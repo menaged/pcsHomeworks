@@ -134,9 +134,79 @@ cdn ->its a normalizer
 
 AUDIO & VIDEO
 
-<audio>src="media/maale" controls</audio>
-<audio>src="media/maale" controls autoplay></audio> start by itself but the browsers stops it
-<audio>src="media/maale" controlsauto play loop</audio>
+<audio src="media/maale" controls </audio>
+<audio src="media/maale" controls autoplay></audio> start by itself but the browsers stops it
+<audio src="media/maale" controlsauto play loop</audio>
 
-<video src="media..."> controls></video>
+<video src="media..."> controls poster="images/..."></video>
+---
+
+FONTS
+
+in body 
+<p>class="a" 
+.a{font-family: serif; --> Times new roman
+font-family: 'times new roman
+.b{font-family: sans-serif; Arial,sans-serif; [if you dont have arial use sans-serif
+.c{font-family: cursuve;
+.d{font-family: fantasy;  
+.e{font=family: monospace;
+
+www.fonts.google.com
+---
+MESSAGE BOX
+
+in the body
+<h1>Positioning<h1/>
+<p>
+<div> class="message-box">Data saved succesfully
+than you make border:
+<style>
+.message-box{
+border:1px solid black
+whidt:25em;
+height:8em;
+backround
+text-align:
+font-size:
+now how can we put this box on the middle of the page?
+
+padding: 1em
+position: fixed
+margin:auto
+top:
+left:
+
+to put the X icon inside the box we use absolute
+---
+FOR VIDEOS
+
+preload="none"
+preload="metadata"
+preload="auto"
+preload="
+
+@media(width <= 600px){
+video {widht: 100%;}
+
+video{width: 100%
+padding
+box-sizing:border-box
+---
+SELECTORS
+universal selector ->box-sizing: border-box
+type selector ->margin-left: 1em;
+id selector ->#it{color:blue}
+class selector-> .special{color:red}
+multiple selectors ->.special,p{font-size:1.5em;}
+descedent selector ->section p{font-style:italic;}
+p.special{text-decoration: underline;}
+div.special{text-decoration:underline;}
+universal descedent selectorsection *{transform:rotate(5deg);}
+immediae descedent selector section>p{font-family:cursive;
+section~p{color:goldenroad;}
+section:not(.special){padding:1em;
+
+
+
 
