@@ -194,6 +194,7 @@ padding
 box-sizing:border-box
 ---
 SELECTORS
+---
 universal selector ->box-sizing: border-box
 type selector ->margin-left: 1em;
 id selector ->#it{color:blue}
@@ -206,6 +207,28 @@ universal descedent selectorsection *{transform:rotate(5deg);}
 immediae descedent selector section>p{font-family:cursive;
 section~p{color:goldenroad;}
 section:not(.special){padding:1em;
+---
+TABLE
+---
+<body>
+<table>
+<thead>
+<tr>
+<td>89</td></tr><tbody></table></body>
+---
+Most Powerfull Selector
+
+		id   class   type
+#it              1       0      0  = 100
+.special         0       1      0  =  10
+p                0       0      1  =   1
+
+p.special        0       1      1  = 011
+#it p.special    1       1      1  = 111
+---
+FORMS
+
+
 
 
 
