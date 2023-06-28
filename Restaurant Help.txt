@@ -228,6 +228,34 @@ p.special        0       1      1  = 011
 ---
 FORMS
 
+Where you want to go after you click submit?
+<form method="POST" action="processOrder.php">
+
+<label> Rating: <input type="range" name="rating" min="1"
+max="5"/>
+<label>
+
+<label> Comments: <textarea name="comments" placeholdres="
+enter comment here">default comment value here<textarea/>
+<label>
+
+<input type="reset">
+
+<button type="reset" value="order it!"/>
+ press here 
+<button/>
+
+<form><label for="name">name:<label/>
+<input id="name"name="name">
+
+---
+Flexbox
+
+article{ border: 2px solid red;}
+
+section{ border:2px solid yellow;}
+
+flexbox froggy website
 
 
 
