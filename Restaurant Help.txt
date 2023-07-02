@@ -228,6 +228,9 @@ p.special        0       1      1  = 011
 ---
 FORMS
 
+<label for="firstAndLastName">First and last name:</label>
+<input id="firstAndLastName" name="names"/>
+
 Where you want to go after you click submit?
 <form method="POST" action="processOrder.php">
 
@@ -242,11 +245,14 @@ enter comment here">default comment value here<textarea/>
 <input type="reset">
 
 <button type="reset" value="order it!"/>
- press here 
+press here 
 <button/>
 
-<form><label for="name">name:<label/>
-<input id="name"name="name">
+<input name="firstName" value="Joe" minLength="3"
+maxlength="5" required/>
+
+<input id="lastName" name="lastName" 
+placeholder="enter last name
 
 ---
 Flexbox
@@ -256,6 +262,21 @@ article{ border: 2px solid red;}
 section{ border:2px solid yellow;}
 
 flexbox froggy website
+
+---
+
+GRID
+
+{display: grid;
+grid-template-columns :100px 200px  }
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+
+
+
 
 
 
