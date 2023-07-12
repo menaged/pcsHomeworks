@@ -89,7 +89,9 @@ class= xxx clear-fix
 float: left;
 display: inline-block;
 
+	REMEMBER!
 .picture: hover {z-index: 1; transform: scale(1.5)}
+z-index makes more important.
 
 margin-left: 10em;	
 
@@ -226,6 +228,7 @@ p                0       0      1  =   1
 p.special        0       1      1  = 011
 #it p.special    1       1      1  = 111
 ---
+
 FORMS
 
 <label for="firstAndLastName">First and last name:</label>
@@ -275,10 +278,29 @@ grid-template-columns :100px 200px  }
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
 
+grid-template-columns: repeat(12,1fr);
+grid-template-rows: repeat(7, 100px);
+---
+
+TRANSITION
+
+transition: delay;
+.box{
+width:200px;
+height:200px;
+backround-color:yellow;
+display-flex;
+justify-content:center;
+align-items:center;
+transition-duration:4s'
 
 
-
-
+.box:hover{
+width: 400px;
+height:400px;
+backround-color: blue;
+rotate: 180deg;
+ 
 
 
 
