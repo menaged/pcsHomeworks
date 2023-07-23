@@ -19,7 +19,6 @@
             overflow-x: scroll;
         }
 
-
         h1 {
             background: rgba(200, 255, 255, .5);
 
@@ -49,8 +48,6 @@
         a {
             color: black;
         }
-
-
 
         a:focus {
             color: cornsilk;

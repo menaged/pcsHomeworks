@@ -9,82 +9,68 @@
     <style>
         body {
             display: grid;
-            grid-template-columns: 1fr ;
-            grid-template-areas: 
-            "small"
-            "medium"
-            "big";
             
-            /* grid-template-rows: 100px 100px 100px 100px 100px 100px 100px ; */
-            gap: 10px;
             
-        }
+            grid-template: 250px 50px 50px 250px / 250px 50px 50px 250px;
+            grid-template-areas: ".  r  r  ."
+                                 "g  r2 p2  p"
+                                 "g  g2 b2  p"
+                                 ".  b  b   ."
+    
 
-        div{
-            background-color:  red;
-            
-            grid-area: small;
-        }
+    }
+        div:nth-child(1){
+        background-color: red;
 
-        medium{
-            grid-area: medium;
-        }
+        grid-area: r ;
+    }
+        div:nth-child(2){
+        background-color: purple;
 
-        big{
-            grid-area: big;
-        }
- 
-        @media(600px >= width){
-            div {
-                display: grid;
-                grid-auto-columns: auto;
-                grid-auto-rows: auto;
+        grid-area: p;
+    }
+        div:nth-child(3){
+        background-color: brown;
+                
+        grid-area: b;
+    }
+        div:nth-child(4){
+        background-color: green;
 
-                background-color: red;
+        grid-area: g;
 
+    }
+        div:nth-child(5){
+        background-color: red;
 
+        grid-area: r2;
 
-            }
+    }
+        div:nth-child(6){
+        background-color: purple;
 
-        }
+        grid-area: p2;
+        
+    }
+        div:nth-child(7){
+        background-color: brown;
 
+        grid-area: b2;
+        
+    }
+    div:nth-child(8){
+        background-color: green;
 
-        /* div:nth-child(1) {
-            background-color: red;
-        }
+        grid-area: g2;
+    }
 
-        div:nth-child(2) {
-            background-color: red;
-        }
-
-        div:nth-child(3) {
-            background-color: red;
-        }
-
-        div:nth-child(4) {
-            background-color: red;
-        }
-
-        div:nth-child(5) {
-            background-color: red;
-        }
-
-        div:nth-child(6) {
-            background-color: red;
-        }
-
-        div:nth-child(7) {
-            background-color: red;
-        } */
     </style>
 </head>
 
-
-
-
 <body>
 
-    <div>nothing happens</div>
+    <div></div>
+    <div></div>
     <div></div>
     <div></div>
     <div></div>

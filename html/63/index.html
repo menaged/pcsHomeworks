@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUFF</title>
+
+    <style>
+        html {
+            font-family: 'Test Font', Arial, sans-serif;
+            margin-right: 90px;
+            margin-left: 90px;
+
+        }
+
+        @font-face {
+            font-family: 'Test Font';
+            src: url("fonts/Helvetica.ttf")
+        }
+
+        body {
+
+            margin-top: 0;
+            
+        }
+
+        header {
+            background-color: lightgray;
+            text-align: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-top: 0;
+
+        }
+
+        .p {
+            grid-column: span;
+            font-size: smaller;
+        }
+
+        nav ul {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 25px;
+            padding-bottom: 10px;
+            padding-left: 97px;
+            display: flex;
+
+            top: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            background-color: black;
+
+
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        footer {
+
+            background-color: black;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: 30px;
+            padding-left: 97px;
+            align-content: flex-start;
+        }
+
+        h4 {
+            font-style: italic;
+            font-size: medium;
+        }
+
+        img {
+            /* inline-size: 300px;
+            display: inline-block;
+            overflow: auto; */
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            inline-size: 300px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            /* text-align: start; */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <p>Try</p>
+    </nav>
+    <nav>
+        <ul>
+
+            <li><a href="products">Products </a></li>
+            <li><a href="signUp">Sign Up</a></li>
+            <li><a href="financials">Financials</a></li>
+            <li><a href="aboutUs">About Us</a></li>
+
+        </ul>
+
+    </nav>
+
+    <header>
+        <h3>ESTUFF</h3>
+        <h4>A PCS Company</h4>
+    </header>
+
+    <p>Products</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis voluptatem expedita quos cum deserunt
+        placeat nam esse tempore? A!</p>
+
+    <div <!-- class="row" -->
+        <div <!-- class="column" -->
+            <h2>Computers</h2>
+            <img src="/63/test/macworld.jpg" alt="macworld" />
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, labore.</h6>
+        </div>
+        <div class="column">
+            <h2>Choir</h2>
+            <img src="/63/test/shira.png" alt="shira" />
+        </div>
+        <div class="column">
+            <h2>Candy</h2>
+            <img src="/63/test/candy.png" alt="candy" />
+        </div>
+    </div>
+
+    <table>
+        <caption>
+            <h5>Profits - By Quarter</h5>
+        </caption>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>1st Quarter profile</th>
+                <th>2nd Quarter profile</th>
+                <th>3rd Quarter profile</th>
+                <th>4th Quarter profile</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2012</td>
+                <td>$1254564.32</td>
+                <td>$1154545.67</td>
+                <td>$1236566.98</td>
+                <td>$13685</td>
+            
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>$1385475.87</td>
+                <td>1485690.23</td>
+                <td>$1365568.54</td>
+                <td>$15454</td>
+            
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>$1589878.76</td>
+                <td>$1698986.45</td>
+                <td>$1645456.32</td>
+                <td>$17898</td>
+            
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>$1889776.22</td>
+                <td>$1854565</td>
+                <td>N/A</td>
+                <td>2015</td>
+            
+            </tr>
+        </tbody>
+    </table>
+
+    <nav>
+        <p>About us</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis repellat impedit? Ut aspernatur
+            eum illo exercitationem esse corrupti at omnis saepe? Inventore aliquid nihil exercitationem odio ex,
+            reiciendis necessitatibus, enim adipisci rem, nemo voluptatibus porro placeat ipsum? Voluptate, consequuntur
+            natus amet accusamus placeat odio doloribus quibusdam, delectus distinctio, quia similique. Explicabo nobis
+            aut impedit ipsam eveniet ipsa cum, iure assumenda deserunt ratione corporis laboriosam nostrum perspiciatis
+            quae? Laborum beatae assumenda autem numquam magni culpa voluptatibus quos veritatis omnis? Vitae corrupti
+            inventore accusamus quam similique, sequi quidem et dolore ipsam consequuntur reiciendis rem officiis vero
+            rerum! Quo vero commodi eos laboriosam provident maxime eveniet sequi amet tempora et adipisci sunt
+            excepturi aliquid, quam id est consequatur aperiam cupiditate eius nisi! Distinctio sequi quaerat ipsam
+            reiciendis mollitia. Quis facilis deserunt pariatur eligendi facere laudantium, corporis aut totam maxime
+            labore reiciendis ea dolorem beatae praesentium dolore nesciunt laboriosam ex autem, dolores saepe deleniti
+            minus. Modi asperiores laboriosam suscipit magnam voluptate quidem, in non odio explicabo sint alias minus
+            laudantium. Maiores voluptatibus nemo distinctio dolore, nesciunt incidunt saepe eum eligendi molestiae
+            eaque asperiores explicabo inventore cupiditate dignissimos autem voluptate odit, delectus atque veniam.
+            Consequuntur, eos ducimus eum odio harum esse quia deleniti, fugiat nostrum perspiciatis iste architecto
+            quae exercitationem quas unde, earum vel quaerat natus soluta deserunt expedita? At praesentium dolores
+            doloremque, veniam doloribus exercitationem officiis nihil cupiditate, consectetur tenetur pariatur
+            provident amet consequuntur tempora ab quibusdam nemo iste iure quaerat molestiae culpa asperiores natus.
+            Fugiat aliquam iusto sit quam voluptate aut quo harum, atque earum praesentium expedita quae cum nostrum
+            consequatur accusamus perspiciatis. Dolorem debitis culpa enim voluptatibus. Aspernatur quos facere non
+            quaerat. Quidem exercitationem deserunt vel sed enim ipsum molestias dicta quae sunt deleniti, sit iste.
+            Error cumque minima tempore suscipit quis at rerum hic alias vitae est, aut fuga illum blanditiis, debitis
+            nisi omnis dolor a sapiente animi asperiores tempora ab odio assumenda quo. Ipsa nemo cum ipsum accusantium
+            consectetur voluptatem cupiditate architecto dicta. Architecto nihil voluptatem error maiores ut quidem eos
+            voluptatum quasi cupiditate ea? Ullam in nobis nemo quas id dolorem maxime, ducimus blanditiis. Sequi,
+            incidunt. Deserunt laudantium delectus qui ipsa veniam cumque unde vero aliquid ab. Ea totam facere, sit
+            iste unde sapiente fugiat quia laborum aspernatur necessitatibus accusantium assumenda, repellat libero
+            quas. Cupiditate, magnam maxime? Maiores, molestiae laborum aut animi aliquid atque quos consequatur quasi
+            totam! Ipsam magnam accusantium eius nostrum! Odio tempora inventore, perferendis asperiores ad placeat?
+            Reiciendis, ut. Ipsa hic, ex error quas dignissimos tenetur perspiciatis voluptates commodi laudantium, iste
+            necessitatibus illum. Porro, optio velit? Atque, doloribus adipisci. Maxime commodi ex sed voluptatem non
+            maiores vitae optio recusandae, itaque obcaecati molestiae nemo inventore eaque explicabo dignissimos?
+            Perferendis corrupti quod omnis eum, optio rerum, maiores ullam odit tempora consectetur nesciunt in
+            voluptatibus doloremque illum pariatur magni sint est, delectus earum inventore ipsa laborum? Tempore
+            nostrum beatae est aliquid neque vel minus impedit provident nemo harum nam libero ea quia, in, aut esse
+            molestiae delectus! Ut ducimus quidem corrupti facilis sequi alias sed, modi, blanditiis sint ipsa deleniti
+            quas velit non, culpa repellendus quasi animi reiciendis magni. Asperiores nisi dolorem molestias placeat
+            error voluptate nam sint vel. Libero non voluptatem doloribus, inventore labore vel! Unde quibusdam nostrum
+            molestiae asperiores nesciunt expedita magni sunt est dicta atque facilis sapiente magnam nisi, mollitia ex
+            eaque nihil? Commodi amet voluptas sapiente, officiis quia culpa temporibus ipsa quibusdam voluptatum?
+            Excepturi nemo velit in blanditiis repellat itaque corporis animi libero aut doloremque consequatur
+            doloribus, eligendi soluta vitae deserunt ut placeat! Nam optio dignissimos commodi autem iste quae
+            inventore, doloremque nesciunt illo error pariatur dolorem nemo natus excepturi similique sequi eum nisi
+            nobis enim recusandae cum quis fugiat molestias numquam. Dolores iure neque explicabo tenetur natus
+            assumenda id quasi consequatur maxime molestiae provident esse dignissimos mollitia totam, quis possimus
+            aliquam laudantium ipsum eligendi amet. Eos earum a ratione eius perferendis assumenda eaque nesciunt fugiat
+            ut cupiditate labore, molestiae sed dignissimos repellat maxime enim sequi tempora repudiandae nisi dolorem
+            in perspiciatis ad consequatur? Blanditiis quidem maxime tempore, praesentium totam possimus numquam? Quae,
+            quibusdam nobis qui voluptatibus, odio natus dolorem temporibus corrupti veritatis harum, velit quod quis
+            perferendis cum nihil quidem hic culpa illum nesciunt iste assumenda veniam. Vel quisquam deleniti, ratione
+            nulla atque at quos deserunt libero esse, animi sapiente amet molestiae et reiciendis sed officia laborum
+            consequuntur asperiores? Laboriosam praesentium blanditiis quibusdam quae debitis, mollitia rerum asperiores
+            quidem. Ratione libero, itaque porro vel fugit iusto blanditiis dignissimos culpa ipsum autem eius ipsam
+            dolore voluptas ab inventore natus fugiat. Beatae est aliquam eum consectetur voluptate tenetur odit optio
+            omnis at iure, unde dolorum ducimus ipsum quasi animi numquam, praesentium a? Nulla suscipit necessitatibus
+            natus quidem odio. Placeat omnis enim unde mollitia recusandae amet ipsum, voluptatibus odio alias id
+            reprehenderit impedit officia perspiciatis tempore minima sed illo? Similique error reprehenderit at
+            repellendus veniam quis omnis est minus blanditiis quo totam maiores ullam nemo consequuntur optio dolorum,
+            itaque ipsum libero accusantium voluptatibus tenetur! Necessitatibus ad sed deleniti, quo, dolorum alias
+            quia minus, harum accusantium iste porro impedit unde deserunt exercitationem laboriosam est pariatur
+            quibusdam voluptatibus. Est, eaque! Error ex necessitatibus perspiciatis pariatur molestias repellat
+            dignissimos voluptate quod accusantium, nisi nulla unde, velit in asperiores quidem ut autem saepe debitis
+            dolorem ratione sequi fuga veritatis. Provident ab quo quae, recusandae laudantium fuga qui error sunt non,
+            fugiat hic reprehenderit ex nam tempora minus? Quo vitae eius amet assumenda commodi rerum tempora dolores,
+            magnam impedit fugit recusandae labore. Autem magnam deserunt veniam quisquam officia explicabo similique
+            consequuntur optio dolorum quasi eligendi voluptatem, porro asperiores quibusdam, tempora excepturi ut?
+            Esse, inventore nobis odit quisquam optio vitae? Sit reprehenderit, voluptates voluptatem repellat illo
+            possimus assumenda itaque dolores beatae quaerat omnis, nostrum fugit soluta ipsa? Dolorum non quia,
+            blanditiis praesentium quae beatae dolor dicta voluptate nesciunt quo. Ratione error officia sit odit atque
+            non doloribus, cum, deleniti dolor architecto repellendus debitis temporibus, cumque beatae nesciunt eaque
+            animi ipsum commodi minima! Dolorum labore debitis, rem sit consequuntur minima ullam exercitationem, eius
+            laborum laudantium delectus qui eos cupiditate magnam neque ducimus eligendi.</p>
+
+    </nav>
+
+
+    <footer>
+        <p>&copy PCS 2019</p>
+    </footer>
+
+</body>
+
+</html>
