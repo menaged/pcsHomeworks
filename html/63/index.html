@@ -20,7 +20,7 @@
 
         body {
 
-            margin-top: 0;
+            /* margin-top: 0; */
         }
 
         header {
@@ -28,21 +28,23 @@
             text-align: center;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             margin-top: 0;
         }
 
         .p {
             grid-column: span;
             font-size: smaller;
+            
         }
 
         nav ul {
             margin-top: 0;
             margin-bottom: 0;
-            padding-top: 25px;
-            padding-bottom: 10px;
+            
+            padding-top: 17px;
+            padding-bottom: 17px;
             padding-left: 97px;
             display: flex;
 
@@ -56,6 +58,7 @@
         nav a {
             color: white;
             text-decoration: none;
+            text-align: ;
         }
 
         nav a:hover {
@@ -77,6 +80,7 @@
 
         h4 {
             font-style: italic;
+            /* font-weight: bold; */
             font-size: medium;
         }
 
@@ -106,14 +110,28 @@
 
         .picture section{
             border-right: 1px solid black;
+            margin-right: 1px;
+            margin-left: 1px;
         }
         
         .picture h6 {
             margin-top: 0;
+            
         }
         .picture aside{
             border-top: 0;            
             float:left;
+            text-align: justify;
+        }
+        table{
+            margin: auto;
+        }
+        form{
+            background-color: lightgray;
+            
+            text-align: center;
+            padding: 40px 40px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -134,10 +152,10 @@
 
     <header>
         <h3>ESTUFF</h3>
-        <h4>A PCS Company</h4>
+        <h4><b>A PCS Company</b></h4>
     </header>
 
-    <p>Products</p>
+    <p><b>Products</b></p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis voluptatem expedita quos cum deserunt
         placeat nam esse tempore? A!</p>
 
@@ -169,10 +187,24 @@
             </section2>
         </article>
 
+        <form method="post" action="signUp.php">
+            <p>Sign Me Up!</p>
+            <label>
+                Name:
+                <input name="Name" placeholder="Your Name" required>
+            </label>
+            <label>
+                Email:
+                <input type="Your Email:" placeholder="Your Email"></label>
+            </label>
+            <button type="button"> Sign Me Up! </button>
+        </form>
+
     <table>
         <caption>
             <h5>Profits - By Quarter</h5>
         </caption>
+
         <thead>
             <tr>
                 <th>Year</th>
