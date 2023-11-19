@@ -1,1 +1,4 @@
-console.log(myName, email);
+'use strict';
+
+console.log(myName, email)
+

@@ -1,0 +1,23 @@
+// {
+//     "extends": "eslint:recommended",
+//     "rules": {
+//         /*"no-plusplus": "error",*/
+//         "semi": [
+//             "error",
+//             "always"
+//         ],
+//         "quotes": [
+//             "error",
+//             "single"
+//         ],
+//         "no-var": "error",
+//         "eqeqeq": "error",
+//         "wrap-iife": "error",
+//         "strict": "error",
+//         "default-param-last": "error"
+//     },
+//     "env": {
+//         "browser": true,
+//         "es6": true
+//     }
+// }

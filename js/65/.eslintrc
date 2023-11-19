@@ -1,0 +1,19 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-plusplus":"error",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ]
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "globals": ['a','b']
+}

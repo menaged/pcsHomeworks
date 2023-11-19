@@ -1,18 +1,22 @@
-'use strict'
+console.log(farenheit(32));
+console.log(celsius(0));
+console.log(farenheit(212));
+console.log(celsius(100));
 
-console.log('The formula to calculate Celsius to Farenheit is:');
-console.log('(C / 5) * 9 + 32');
-console.log('And to calculate from Farenheit to Celsius is:');
-console.log('(F - 32) * 5 / 9 ');
+let userInput = prompt('Give me a degree in farenheit:');
+alert('The degrees you gave in farenheit are ' + farenheit(userInput) + ' in celsius');
+userInput = prompt('Give me a degree in celsius:');
+alert('The degrees you gave in celsius are ' + celsius(userInput) + ' in farenheit');
 
-var farenheit = prompt('Type a degree in Farenheit');
-var celsius = prompt('Type a degree in Celsius');
+function farenheit(c) {
+    'use strict';
 
-alert(`${(farenheit - 32) * 5 / 9 } Celsius`);
-alert (`${(celsius / 5) * 9 + 32 } Farenheit`);
+    return (c - 32) * 5 / 9;
+}
 
+function celsius(f) {
+    'use strict';
 
+    return (f / 5 * 9 + 32);
+}
 
-// let formula = function((${celsius} / 5) * 9 + 32){
-//     return()
-// }

@@ -251,6 +251,8 @@ enter comment here">default comment value here<textarea/>
 press here 
 <button/>
 
+<button id=cancel></button>
+
 <input name="firstName" value="Joe" minLength="3"
 maxlength="5" required/>
 
@@ -314,7 +316,24 @@ Docs
 
 jumbotrons
 
- 
+---
 
+`` <-- use for dinamic
+---
+
+Make a message box
+
+window.pcs = window.pcs || {};
+window.pcs.messageBox(function () {
+
+return function (msg){
+const div = document.creatElement('div');
+div.innerText = msg;
+document.body.appendChild(div);
+console.log(msg)
+
+div.style.display = 'none';
+
+}());
 
 
