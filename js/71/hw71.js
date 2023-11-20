@@ -6,22 +6,20 @@ window.myApp = (function (myAppNew) {
     myAppNew.a = () => console.log('model a called');
 
     let utils = {
-            months: ['January', 'February', 'March', 'April'],
+        months: ['January', 'February', 'March', 'April'],
 
-            getMonth(index) {
-                return this.months[index - 1];
-            },
+        getMonth(index) {
+            return this.months[index - 1];
+        },
 
-            getMonthIndex(month) {
-                for (let i = 0; i < this.months.length; i++) {
-                    if (this.months[i] === month) {
-                        return i + 1;
-                    }
+        getMonthIndex(month) {
+            for (let i = 0; i < this.months.length; i++) {
+                if (this.months[i] === month) {
+                    return i + 1;
                 }
             }
-        };
-
-    }
+        }
+    };
 
 }(window.myApp || {}));
 
