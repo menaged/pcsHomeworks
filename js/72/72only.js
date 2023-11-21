@@ -9,9 +9,4 @@
         console.log('Button was cliked js2')
 
     });
-
-
-
-
-
 }());

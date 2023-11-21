@@ -13,7 +13,6 @@ function farenheit(c) {
 
     return (c - 32) * 5 / 9;
 }
-
 function celsius(f) {
     'use strict';
 

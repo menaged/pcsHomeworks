@@ -8,7 +8,6 @@ function arrayLetters(array, callback) {
     }
     return true;
 }
-
 const lettersUp = ['J', 'K', 'L'];
 const lettersLow = ['j', 'k', 'l'];
 
@@ -38,5 +37,4 @@ function multipler(a) {
         return a * b;
     };
 }
-
 console.log(multipler(8)(6));

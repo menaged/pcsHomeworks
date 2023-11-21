@@ -11,7 +11,6 @@ window.myApp = (function (myAppNew) {
         getMonth(index) {
             return this.months[index - 1];
         },
-
         getMonthIndex(month) {
             for (let i = 0; i < this.months.length; i++) {
                 if (this.months[i] === month) {

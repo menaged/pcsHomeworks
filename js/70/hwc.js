@@ -8,7 +8,6 @@ window.interestCalculator =
         function calculateInterest(principalAmount) {
             //100 * (3 / 100) * 1
             return principalAmount * rate * years;
-
         }
         function setRate(rate) {
             this.rate = rate;
@@ -16,7 +15,6 @@ window.interestCalculator =
         function setYears(years) {
             this.years = years;
         }
-
         return {
             calculateInterest,
             setRate,

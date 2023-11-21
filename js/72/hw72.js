@@ -3,7 +3,6 @@
 
     document.querySelector('#button').addEventListener('click', repeat);
 
-
     const myNewButton = document.createElement('button');
 
     button1.addEventListener('click', () => {

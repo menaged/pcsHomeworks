@@ -18,7 +18,6 @@ window.calculator = (function interestCalculator() {
         return p - principal;
     }
     return {
-
         setRate,
         setYears,
         calculateInterest

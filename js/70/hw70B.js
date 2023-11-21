@@ -1,7 +1,6 @@
 /* global calculator */
 
 (function () {
-    
     'use strict';
     
     calculator.setRate(.3);

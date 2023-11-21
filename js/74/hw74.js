@@ -8,4 +8,4 @@
         document.body.style.color = colors[index++];
 
     })
-})
+})();
