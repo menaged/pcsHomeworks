@@ -1,16 +1,16 @@
 (function () {
     'use strict';
 
-    document.querySelector('#button').addEventListener('click', repeat);
-
-    const myNewButton = document.createElement('button');
-
-    button1.addEventListener('click', () => {
+    function clickHandler() {
+        console.log(this);
         const myNewButton = document.createElement('button');
-        
-        myNewButton.innerText = 'new button';
+        myNewButton.innerText = `${++newButton}`;
+        myNewButton.addEventListener('click', clickHandler);
         document.body.appendChild(myNewButton);
-        console.log('Click me! was clicked');
-    });
-    myNewButton();
+    }
+    let newButton = 1;
+    const button1 = document.querySelector('#button');
+
+    button1.addEventListener('click', clickHandler);
 }());
+
