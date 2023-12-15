@@ -16,7 +16,6 @@ function upper(char) {
 }
 function some(char) {
     return char.toUpperCase() === char;
-
 }
 console.log(arrayLetters(lettersUp, upper));
 console.log(arrayLetters(lettersLow, upper));

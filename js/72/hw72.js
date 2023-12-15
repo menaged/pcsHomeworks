@@ -10,7 +10,7 @@
     }
     let newButton = 1;
     const button1 = document.querySelector('#button');
-
     button1.addEventListener('click', clickHandler);
+    
 }());
 

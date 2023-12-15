@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    
+    <style>
+        .shapes {
+            display: flex;
+            justify-content: space-around;
+        }
 
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 86.6px solid green;
+        }
+
+        .font {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shapes">
+        <div id="circle"></div>
+        <div class="square"></div>
+        <div class="triangle"></div>
+    </div>
+
+    <button id="circleButton">Circle</button>
     <button id="button">Start</button>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius cupiditate ad corporis rem laudantium, excepturi reiciendis architecto. Reprehenderit, sed! Fugit possimus asperiores vitae soluta a, accusantium mollitia magnam neque!
+    <button id="stopButton">Stop</button>
+
+    <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam numquam excepturi, ipsa harum cum
+        minima quos quidem doloribus quo. Libero, unde sapiente assumenda dolore repellendus non odit asperiores veniam
+        accusantium labore aperiam similique possimus quaerat officia odio molestias quam quia maxime aut? Sit
+        architecto ipsa, adipisci maiores illo sunt voluptas eligendi nobis ducimus repellat numquam nesciunt aut
+        voluptatibus ratione rerum? Hic inventore nihil nesciunt. Aliquid quibusdam magni pariatur autem rem quidem
+        laborum, modi consequuntur obcaecati unde fuga saepe reprehenderit dolores numquam assumenda sint eius beatae,
+        sapiente cumque at cum aspernatur itaque praesentium error! Temporibus itaque harum exercitationem labore id
+        omnis ab optio modi sit molestiae eligendi neque animi ea voluptatibus expedita, quaerat doloremque corrupti
+        explicabo possimus quod architecto deserunt dolorem ullam natus. Repellat illum exercitationem autem maxime,
+        provident officia similique sit atque, nisi sint, aliquam ratione cum magnam nam culpa deleniti. Veritatis eaque
+        soluta voluptates suscipit ullam eveniet blanditiis excepturi placeat velit eius ad temporibus cumque, facere
+        iure voluptatibus mollitia, id aspernatur nam dolore. Nam perspiciatis pariatur itaque minima architecto ad
+        porro delectus omnis iusto alias accusantium ab exercitationem repellat, tempore, saepe sit veniam. Distinctio
+        voluptas possimus iure debitis? Quaerat tempore, repudiandae totam ullam explicabo placeat eligendi eaque
+        perspiciatis iusto non consectetur ab ipsam error iure fugiat rem repellendus. Totam aliquam ab ipsum tempora,
+        eum sint, commodi fugit iste ullam dolorem quasi consequuntur. Id odio magnam a neque quos officiis itaque quo.
+        Quas autem voluptatem omnis at. Ipsam unde accusantium corrupti aliquid deserunt. Quidem quasi facilis non
+        voluptatum sapiente perferendis!</p>
+
+
+
     <script src="hw74.js"></script>
-    <script src="hw742.js"></script>
+
 </body>
+
 </html>
