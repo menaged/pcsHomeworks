@@ -15,12 +15,4 @@
         return n * 2;
     }));
 
-    console.log(ourMap(numbers, n => n * n));
-
-    function fooify(n){
-        return `foo${n}`;
-    }
-    console.log(ourMap(numbers, fooify));
-
-    console.log(numbers.map(fooify));
 }());

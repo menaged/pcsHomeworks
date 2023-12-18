@@ -2,11 +2,19 @@
     'use strict';
 
     let index = 0;
-    const colors = ['red', 'green', 'purple'];
+    const colors = ['red', 'green', 'purple', 'yellow'];
 
-    document.querySelector('#button').addEventListener('click', () => {
-        document.body.style.color = colors[index++];
-    });
+    document.querySelector('#startButton').addEventListener('click', () => {
+        setInterval (() => {
+            document.body.style.color = colors[index++];
+        
+        if (index === colors.length) {
+            index = 0;
+        }
+        document.body.querySelector('p').style.backgroundColor = colors[index];
+    },1000);
+});
+
 
     let index2 = 0;
     const circle = ['yellow', 'red', 'orange', 'blue'];
