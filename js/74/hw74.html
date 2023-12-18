@@ -18,13 +18,13 @@
             border-radius: 50%;
         }
 
-        .square {
+        #square {
             width: 100px;
             height: 100px;
             background-color: blue;
         }
 
-        .triangle {
+        #triangle {
             width: 0;
             height: 0;
             border-left: 50px solid transparent;
@@ -38,17 +38,22 @@
             font-size: 20px;
             margin-top: 20px;
         }
+        div, button {
+            margin-top: 30px;
+        }
     </style>
 </head>
 
 <body>
     <div class="shapes">
         <div id="circle"></div>
-        <div class="square"></div>
-        <div class="triangle"></div>
+        <div id="square"></div>
+        <div id="triangle"></div>
     </div>
 
     <button id="circleButton">Circle</button>
+    <button id="squareButton">Square</button>
+    <button id="triangleButton">Triangle</button>
     <button id="button">Start</button>
     <button id="stopButton">Stop</button>
 
