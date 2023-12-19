@@ -16,3 +16,40 @@
     }));
 
 }());
+
+
+
+
+const newArray = [10, 20, 30];
+function newMap(numeros, devolvimento) {
+    'use strict';
+    const results = [];
+    newArray.forEach(elem => {
+        results.push(devolvimento(elem));
+    });
+    return results;
+}
+
+const anotherArray = [45, 54, 65, 2];
+console.log(newMap(anotherArray, function (n){
+    'use strict';
+    return n * 2;
+}));
+
+console.log(newMap(anotherArray, n => n * n));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
