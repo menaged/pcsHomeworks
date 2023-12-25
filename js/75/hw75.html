@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .messageBox {
+        background-color: rgb(137, 137, 206) !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input id="msg">
+    <button id="show">Show your message</button>
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit asperiores architecto minima, molestiae magnam aliquid dicta perferendis quo? A, distinctio? Nostrum facilis distinctio rem itaque et saepe est expedita velit, error ut atque quasi tenetur iste omnis. Suscipit ad eius numquam voluptates ipsam vitae ipsa nobis mollitia, provident at aspernatur tempora adipisci, dolorem dolore incidunt quam fugit debitis blanditiis illo? Tempora voluptate non quas ea pariatur voluptatibus alias, neque et, repellat vero id perspiciatis illum doloribus dolores voluptatem eaque? Culpa provident quibusdam quas at! Sunt quos aut minus cum temporibus obcaecati? In voluptatibus doloremque, provident nihil, repudiandae laboriosam odit, voluptatem odio sit natus aliquam nam consectetur. Sed, laudantium. Unde pariatur exercitationem maxime natus, magni dolore minima, eos minus aperiam vitae vel quaerat quam eligendi sint repellat officiis, qui deleniti ad necessitatibus! Fugit quam rerum quisquam dolor omnis nihil ratione, veritatis soluta eos aspernatur. Eos fugiat molestiae velit reiciendis eius hic repudiandae deserunt nisi praesentium nostrum aut eligendi numquam vero ullam et unde doloribus harum laborum, doloremque dolor saepe amet quod magnam! Dolore in maxime repellendus at, neque rerum fugiat provident vitae earum quas a dignissimos, laudantium ea quos recusandae accusantium suscipit numquam tempore vel laborum. Illum reiciendis quam dolorum harum, iure repellendus earum eius ab recusandae error, quae ut nisi dignissimos necessitatibus, magnam laborum saepe voluptatem vitae facere deserunt corrupti consequuntur sequi distinctio excepturi? Quaerat dicta molestias, incidunt consectetur, odio totam accusantium inventore nam eaque eos voluptas placeat aut eius cum nostrum amet nihil quo? Exercitationem nisi dolore corporis laudantium!
+
+    <script src="hw75.js"></script>
+    <script>
+      
+      window.pcs.messageBox('Thank you', () => console.log('You clicked!'));
+      window.pcs.messageBox('Is this enough homework?', usersChoice => console.log('You picked ' + usersChoice), ['Yes', 'No', 'Maybe']);
+      
+      const msg = document.querySelector('#msg');
+      document.querySelector('#show').addEventListener('click', () => {
+        window.pcs.messageBox(msg.value);
+        
+      });
+      </script>
+  </body>
+
+</html>

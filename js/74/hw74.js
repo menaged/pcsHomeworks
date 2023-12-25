@@ -7,7 +7,6 @@
     document.querySelector('#startButton').addEventListener('click', () => {
         setInterval(() => {
             document.body.style.color = colors[index++];
-
             if (index === colors.length) {
                 index = 0;
             }
