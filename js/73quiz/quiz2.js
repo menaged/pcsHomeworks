@@ -36,6 +36,7 @@ console.log(newMap(anotherArray, function (n){
     return n * 2;
 }));
 
+// eslint-disable-next-line strict
 console.log(newMap(anotherArray, n => n * n));
 
 

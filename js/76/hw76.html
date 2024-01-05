@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="hw76.js"></script>
+
+    <h1 id="joe">Joe Biden</h1>
+    <h1 id="kamala">Kamala Harris</h1>
+    <script>
+
+        let joe = pcs('#joe');
+        joe.css('color', 'pink');
+        console.log(joe.css('color'));
+
+        joe.css('position', 'absolute');
+        joe.css('bottom', undefined);
+
+        joe.on('click', () => console.log('Joe was clicked!'));
+        joe.click(() => console.log('Joe was clicked #2!'));
+
+        setTimeout(() => {
+            joe.hide();
+        }, 2000);
+
+        setTimeout(() => {
+            joe.show();
+        }, 4000);
+
+        window.pcs('#kamala')
+            .click(() => {
+                console.log('kamala was clicked!');
+            })
+            .css('fontSize', '36px')
+            .css('rotate', '344deg')
+            .flash(7000, 100)
+            .on('mouseenter', () => {
+                console.log('mouse is on Kamala');
+            });
+    </script>
+</body>
+
+</html>
