@@ -25,7 +25,7 @@ window.pcs = (function () {
     }
 
     return function (selector) {
-        const elem = document.querySelector(selector);
+        const elem = document.querySelector(selector); 
 
         return {
             css: function (property, value) {
