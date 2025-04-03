@@ -50,18 +50,106 @@ for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 
-let number = 2; 
+let number = 2;
 
 while (number <= 20) {
-    console.log(`${number} even numbers only`); 
-    number += 2; 
+    console.log(`${number} even numbers only`);
+    number += 2;
 }
 
-function fibonacci() {
-    
-} 
+function fibonacciSequence(n) {
+    const sequence = [0, 1];
+    if (n <= 2) return sequence.slice(0, n);
+    for (let i = 2; i < n; i++) {
+        const nextNum = sequence[i - 1] + sequence[i - 2];
+        sequence.push(nextNum);
+    }
+    return sequence;
+}
+
+console.log(fibonacciSequence(10));
+
+console.log('Exercise 5 Arrays');
+
+let fruits = ['apple', 'orange', 'banana', 'pear', 'stawberry'];
 
 
+let firstFruit = fruits.at(0);
+let lastFruit = fruits.at(-1); //Last in the array
+console.log(lastFruit);
+console.log(firstFruit);
+
+const arraysOfNumbers = [12, 32, 54, 45, 78, 66];
+console.log(arraysOfNumbers);
+
+function someNumbers(arr) {
+
+    function sumArrayForEach(arr) {
+        let sum = 0;
+        arr.forEach(arraysOfNumbers => {
+            sum += arraysOfNumbers;
+        });
+        return sum;
+    }
+
+    const sumForEach = sumArrayForEach(arraysOfNumbers);
+    console.log(sumForEach); // Output: 15
+}
+
+function arraySum(array) {
+    let total = 0,
+        len = array.length;
+
+    for (let i = 0; i < len; i++) {
+        total += array[i];
+    }
+    return total;
+}
+
+let my_array = [1, 2, 3, 4];
+
+console.log(arraySum(my_array));
+
+const students = {
+    name: 'Fafa',
+    age: 20,
+    grade: [80, 90, 100]
+};
+console.log(students);
+
+console.log('Exercise 6 Methods');
+
+const double = arraysOfNumbers.map((x) => x * 2);
+console.log(double);
+const filter = arraysOfNumbers.filter((x) => x > 10);
+console.log(filter);
+
+const total = arraysOfNumbers.reduce(arrayReduce);
+
+function arrayReduce(accumulator, element) {
+    return accumulator + element;
+}
+
+console.log(total);
+
+console.log('Exercise 7 Functions');
+
+function makesFunctions() {
+
+}
+
+const sumFunction = (xa, ya) => (xa + ya);
+
+console.log(sumFunction(23, 33));
+
+console.log('Exercise 8 DOM manipulation');
+console.log('Exercise 9 Asynchronous JavaScript');
+
+setTimeout(() => {
+    console.log('I\'m here after 3 seconds');
+}, 3000);
 
 
-
+fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+.then(response => console.log(response))
+.catch(error => console.error(error));
