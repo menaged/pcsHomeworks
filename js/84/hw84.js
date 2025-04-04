@@ -1,7 +1,7 @@
 console.log('Exercise 1 Variables & Data Types');
 
-let myName = 'Joe';
-let age = 35;
+let myName = 'Olivia';
+let age = 25;
 let pi = 3.14;
 console.log(`${myName} // ${age} // ${pi}`);
 
@@ -111,7 +111,7 @@ let my_array = [1, 2, 3, 4];
 console.log(arraySum(my_array));
 
 const students = {
-    name: 'Fafa',
+    name: 'Ethan',
     age: 20,
     grade: [80, 90, 100]
 };
