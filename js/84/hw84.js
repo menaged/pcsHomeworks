@@ -134,10 +134,6 @@ console.log(total);
 
 console.log('Exercise 7 Functions');
 
-function makesFunctions() {
-
-}
-
 const sumFunction = (xa, ya) => (xa + ya);
 
 console.log(sumFunction(23, 33));
@@ -149,15 +145,6 @@ setTimeout(() => {
     console.log('I appear here after 3 seconds');
 }, 3000);
 
-
-fetch('https://pokeapi.co/api/v2/pokemon/ditto')
-    .then(response => console.log(response))
-    .catch(error => console.error(error));
-
-function print() {
-    console.log('Hello World');
-}
-
 setTimeout(print, 5000);
 
 for (let i = 0; i < 5; i++) {
@@ -166,7 +153,7 @@ for (let i = 0; i < 5; i++) {
     }, 1000 * i);
 }
 
-for (let = i; i < 10; i++) {
+for (let i = i; i < 10; i++) {
     setTimeout(() => {
         console.log(i);
     }, 1000 * i);
