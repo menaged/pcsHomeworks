@@ -73,7 +73,6 @@ console.log('Exercise 5 Arrays');
 
 let fruits = ['apple', 'orange', 'banana', 'pear', 'stawberry'];
 
-
 let firstFruit = fruits.at(0);
 let lastFruit = fruits.at(-1); //Last in the array
 console.log(lastFruit);
