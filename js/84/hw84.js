@@ -146,10 +146,31 @@ console.log('Exercise 8 DOM manipulation');
 console.log('Exercise 9 Asynchronous JavaScript');
 
 setTimeout(() => {
-    console.log('I\'m here after 3 seconds');
+    console.log('I appear here after 3 seconds');
 }, 3000);
 
 
 fetch('https://pokeapi.co/api/v2/pokemon/ditto')
-.then(response => console.log(response))
-.catch(error => console.error(error));
+    .then(response => console.log(response))
+    .catch(error => console.error(error));
+
+function print() {
+    console.log('Hello World');
+}
+
+setTimeout(print, 5000);
+
+for (let i = 0; i < 5; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, 1000 * i);
+}
+
+for (let = i; i < 10; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, 1000 * i);
+}
+
+
+
