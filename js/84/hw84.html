@@ -5,73 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title>Potato Head Game</title>
 
     <style>
         body {
-            background-image: url(potatoeParts/potatoeHeadBackground.png);
+            background-image: url(potatoeParts/potatoeHeadBackground2.png);
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-
-        /* .parts {
-            width: 100px;
-            cursor: pointer;
-        }
-
-        html,
-        body,
-        #parts,
-        #main {
-            height: 100%;
-            margin: 0;
-        }
-
         #parts {
             float: left;
-            width: 25%;
-            background-color: rgb(215, 150, 29);
-            overflow: auto;
+            width: 16%;
+            backdrop-filter: blur(20px);
+            padding: 10px
+            /* background-color: blue; */
+        }
+
+        .part {
+            padding: 4px
+        }
+
+        .square {
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            margin: 6px;
             padding: 10px;
-        }
-
-        #main {
-            float: left;
-            width: 75%;
-            background-color: rgb(26, 187, 26);
-            position: relative;
-        }
-
-        .draggable {
             position: absolute;
-        }  */
+            /* top: 100px;
+            left: 100px; */
+            z-index: 10; 
+
+        }
     </style>
 </head>
 
 <body>
-
-    <div id="parts"></div>
-    <div id="main"></div>
-
+    
+    <div class="square"> </div> 
+    
+    
     <div id="parts">
-        <img class="parts" src="potatoeParts/body.png" draggable="true">
-        <img class="parts" src="potatoeParts/earsLeft.png" draggable="true">
-        <img class="parts" src="potatoeParts/earsRight.png" draggable="true">
-        <img class="parts" src="potatoeParts/eyes&Glasses.png" draggable="true">
-        <img class="parts" src="potatoeParts/eyes.png" draggable="true">
-        <img class="parts" src="potatoeParts/eyesBoy.png" draggable="true">
-        <img class="parts" src="potatoeParts/eyesGirl.png" draggable="true">
-        <img class="parts" src="potatoeParts/eyesOnly.png" draggable="true">
-        <img class="parts" src="potatoeParts/mouth.png" draggable="true">
-        <img class="parts" src="potatoeParts/mouthRed.png" draggable="true">
-        <img class="parts" src="potatoeParts/nose.png" draggable="true">
-        <img class="parts" src="potatoeParts/noseRed.png" draggable="true">
+        <img class="part" src="potatoeParts/body.png" draggable="true">
+        <img class="part" src="potatoeParts/eyes&Glasses.png" draggable="true">
+        <img class="part" src="potatoeParts/eyesOnly.png" draggable="true">
+        <img class="part" src="potatoeParts/eyes.png" draggable="true">
+        <img class="part" src="potatoeParts/eyesBoy.png" draggable="true">
+        <img class="part" src="potatoeParts/eyesGirl.png" draggable="true">
+        <img class="part" src="potatoeParts/earsRight.png" draggable="true">
+        <img class="part" src="potatoeParts/earsLeft.png" draggable="true">
+        <img class="part" src="potatoeParts/mouth.png" draggable="true">
+        <img class="part" src="potatoeParts/mouthRed.png" draggable="true">
+        <img class="part" src="potatoeParts/nose.png" draggable="true">
+        <img class="part" src="potatoeParts/noseRed.png" draggable="true">
     </div>
-
-    <div id="main"></div>
-        
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
     <script src="hw84.js"></script>
 </body>
 

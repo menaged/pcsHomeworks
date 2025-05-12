@@ -7,11 +7,9 @@
         html {
             background-color:
                 rgba(255, 100, 155, 0.5);
-
         }
 
         body {
-
             max-width: 600px;
             margin: auto;
 
@@ -19,10 +17,8 @@
             overflow-x: scroll;
         }
 
-
         h1 {
             background: rgba(200, 255, 255, .5);
-
         }
 
         h2 {
@@ -49,8 +45,6 @@
         a {
             color: black;
         }
-
-
 
         a:focus {
             color: cornsilk;
