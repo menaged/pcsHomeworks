@@ -174,35 +174,76 @@
     // }
 
 
-    let dragging = false;
-    let offset;
-    const theSquare = document.querySelector('.square');
+    function loadParts () {
+        const partsContainer = document.querySelector('.parts');
+        const partsContainerWidth = getComputedStyle(partsContainer.width));
+        console.log(partsContainerWidth)
+        const PART_SPACE = 110;
 
+        let x = 0;
+        let y = 0;
 
-    function mouseMoveHandler(e) {
-        if (dragging) {
-            // theSquare.style = `top: ${e.pageY - offset.y}px; left: ${e.pageX - offset.x}px`;
-            theSquare.style.top = `${e.pageY - offset.y}px`;
-            theSquare.style.left = `${e.pageX - offset.x}px`;
+        for(let i = 1; i <= 23; i++) {
+            const part = document.createElement('img');
+            part.className = 'part';
+            part.src = 'images/${i}.png';
+
+            part.style = `top: ${y}px; left: ${x}px`;
+
+            partsContainer.appendChild(part);
+
+            X += PART_SPACE
+
+            if (x >= partsContainerWidth - PART_SPACE) {
+                x = 0;
+                y += PART_SPACE;
+            }
         }
-    }
 
-    theSquare.addEventListener('mousedown', e => {
-        dragging = true;
-        offset = { y: e.offsetY, x: e.offsetX };
-        console.log('mouse down');
+    }
+    let dragging;
+    let offset;
+
+    document.addEventListener('mousedown', e => {
+        if (e.target.matches('.part')) {
+            dragging = e.target;
+            offset = { y: e.offsetY, x: e.offsetX };
+
+        }
+    });
+
+    document.addEventListener('mousemove', e => {
+        e.preventDefault(); //stops the browser to help us Prevent text selection during drag
+
+        if (dragging) {
+            const currentStyle = getComputedStyle(dragging);
+            dragging.style = `top: ${e.pageY - offset.y}px; left: ${e.pageX - offset.x}px; background-color: ${currentStyle.backgroundColor}`;
+
+        }
 
     });
 
-    document.addEventListener('mousemove', mouseMoveHandler);
-
     document.addEventListener('mouseup', e => {
-        console.log('mouse up');
         dragging = false;
     });
 
+    const colorInput = document.querySelector('#color');
 
 
+    //Button that add square
+
+    document.querySelector('#addSquare').addEventListener('click', () => {
+        const newSquare = document.createElement('div');
+        newSquare.style = `background-color: ${colorInput.value};`;
+        newSquare.style.width = '50'px;
+        newSquare.style.height = '50'px;
+        document.body.appendChild(newSquare);
+
+    });
+    document.addEventListener('mouseup', e => {
+        dragging = false
+    })
+    loadParts();
 
 }());
 
