@@ -143,9 +143,9 @@ console.log('Exercise 8 DOM manipulation');
 
 console.log('Exercise 9 Asynchronous JavaScript');
 
-setTimeout(() => {
-    console.log('I appear here after 3 seconds');
-}, 3000);
+// setTimeout(() => {
+//     console.log('I appear here after 3 seconds');
+// }, 3000);
 
 
 // setTimeout(confirm, 5000);
@@ -174,62 +174,98 @@ setTimeout(() => {
 // }
 
 
+const parts = [];
+
 function loadParts() {
-    const partsContainer = document.querySelector('#part');
+    const partsContainer = document.querySelector('#parts');
     const partsContainerWidth = parseInt(getComputedStyle(partsContainer).width);
+
     const PART_SPACE = 110;
 
     let x = 0;
     let y = 0;
 
-    for (let i = 1; i <= 23; i++) {
+    for (let i = 1; i < 23; i++) {
         const part = document.createElement('img');
-        part.className = 'part';
-        part.src = 'potatoeParts/${i}.png';  //'images/${i}.png';
+        part.className = i < 23 ? 'part' : 'part potato';
+        part.src = `images/${i}.png`;
 
         part.style = `top: ${y}px; left: ${x}px`;
 
         partsContainer.appendChild(part);
 
-        X += PART_SPACE;
+        x += PART_SPACE;
 
         if (x >= partsContainerWidth - PART_SPACE) {
             x = 0;
             y += PART_SPACE;
         }
+
+        part.push(part);
+
     }
 }
-let dragging;
-let offset;
-let zindex = 1;
 
-document.addEventListener('mousedown', e => {
-    if (e.target.matches('.part')) {
-        dragging = e.target;
-        offset = { y: e.offsetY, x: e.offsetX };
+function saveState() {
+    const partsData = [];
 
-        if (!dragging.matches('.potatoBody')) {
+    parts.forEach(part => {
+        const style = getComputedStyle(part);
+        partsData.push({
+            top: style.top,
+            left: style.left,
+            zindex: style.zIndex
+        });
+    });
 
-            const currentStyle = getComputedStyle(dragging);
-            dragging.style = `top: ${currentStyle.top}; left: ${currentStyle.left}; z-index: ${zindex++}`;
+    localStorage.setItem('parts', JSON.stringify(partsData));
+}
+
+function loadState() {
+    const partsData = JSON.parse(localStorage.getItem('parts')) || [];
+    partsData.forEach((part, index) => {
+        parts[index].style = `top: ${part.top}; left: ${part.left};
+        z-index: ${part.zindex}`;
+
+    });
+
+    let dragging;
+    let offset;
+    let zindex = 1;
+
+    document.addEventListener('mousedown', e => {
+        if (e.target.matches('.part')) {
+            dragging = e.target;
+
+            console.log(dragging.style);
+
+            offset = { y: e.offsetY, x: e.offsetX };
+
+            if (!dragging.matches('.potato')) {
+                dragging.style.zIndex = zindex++;
+            }
         }
-    }
-});
+    });
 
-document.addEventListener('mousemove', e => {
-    e.preventDefault(); //stops the browser to help us Prevent text selection during drag
+    document.addEventListener('mousemove', e => {
+        e.preventDefault();
 
-    if (dragging) {
-        const currentStyle = getComputedStyle(dragging);
-        dragging.style = `top: ${e.pageY - offset.y}px; left: ${e.pageX - offset.x}px; z-index: ${currentStyle.zIndex}`;
-    }
+        if (dragging) {
+            dragging.style.top = `${e.pageY - offset.y}px`;
+            dragging.style.left = `${e.pageX - offset.x}px`;
 
-});
+        }
+    });
 
-document.addEventListener('mouseup', e => {
-    dragging = false;
-});
+    document.addEventListener('mouseup', e => {
+        if(dragging) {
+            dragging = false;
+            saveState();
+        }
+    });
 
-loadParts();
+    loadParts();
+    loadState();
+}
 
 

@@ -14,18 +14,28 @@
             background-size: cover;
         }
 
-        /* #parts {
+        
+        #parts {
             float: left;
             width: 16%;
+            left: -0.5%;
             backdrop-filter: blur(20px);
             padding: 10px;
-        } */
+            
+            /* position: absolute; */
+        }
         
         .part {
             padding: 4px;
-            position: absolute
+            position: absolute;
+            z-index: 0;
+            cursor: grab
+
         }
 
+        /* .potatoBody{
+            position: absolute
+        } */
     </style>
 </head>
 
@@ -33,7 +43,6 @@
     
     <div id="parts">
         <img class="potatoBody" src="potatoeParts/body.png" >
-        <img class="part" src="potatoeParts/eyes&Glasses.png">
         <img class="part" src="potatoeParts/eyesOnly.png">
         <img class="part" src="potatoeParts/eyes.png" >
         <img class="part" src="potatoeParts/eyesBoy.png" >
@@ -44,6 +53,7 @@
         <img class="part" src="potatoeParts/mouthRed.png" >
         <img class="part" src="potatoeParts/nose.png">
         <img class="part" src="potatoeParts/noseRed.png">
+        <img class="part" src="potatoeParts/eyes&Glasses.png">
     </div>
     
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
