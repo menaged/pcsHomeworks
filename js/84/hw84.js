@@ -185,11 +185,10 @@ function loadParts() {
     let x = 0;
     let y = 0;
 
-    for (let i = 1; i < 23; i++) {
+    for (let i = 1; i <= 23; i++) {
         const part = document.createElement('img');
         part.className = i < 23 ? 'part' : 'part potato';
-        part.src = `images/${i}.png`;
-
+        part.src = `potatoeParts/${i}.png`;  //image
         part.style = `top: ${y}px; left: ${x}px`;
 
         partsContainer.appendChild(part);
@@ -200,9 +199,7 @@ function loadParts() {
             x = 0;
             y += PART_SPACE;
         }
-
-        part.push(part);
-
+        parts.push(part);  //changed
     }
 }
 
@@ -241,7 +238,7 @@ function loadState() {
 
             offset = { y: e.offsetY, x: e.offsetX };
 
-            if (!dragging.matches('.potato')) {
+            if (!dragging.matches('.potatoeBody')) {
                 dragging.style.zIndex = zindex++;
             }
         }
@@ -258,14 +255,21 @@ function loadState() {
     });
 
     document.addEventListener('mouseup', e => {
-        if(dragging) {
+        if (dragging) {
             dragging = false;
             saveState();
         }
     });
 
-    loadParts();
-    loadState();
+    // document.addEventListener('mouseup', e => {
+    //     if (dragging) {
+    //         dragging = null;
+    //         saveState();
+    //     }
+    // });
+
 }
 
+loadParts();
+loadState();
 
