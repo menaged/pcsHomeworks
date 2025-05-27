@@ -20,3 +20,4 @@ const move = (e) => {
 document.addEventListener('mouseup', () => {
     document.removeEventListener('mousemove', move);
 });
+

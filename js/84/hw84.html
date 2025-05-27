@@ -9,28 +9,29 @@
 
     <style>
         html,
-        body,
-        #parts,
-        #main {
+        body {
             height: 100%;
-            margin: 0%;
+            margin: 0;
+            overflow: hidden;
         }
 
         body {
-            background-image: url(potatoeParts/potatoeHeadBackground2.png);
+            background-image: url(potatoParts/potatoeHeadBackground2.png);
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative;
         }
-
 
         #parts {
             float: left;
-            width: 16%;
-            left: -0.5%;
+            width: 17%;
+            /* left: -0.5%; */
             backdrop-filter: blur(20px);
             padding: 10px;
-
-            /* position: absolute; */
+            height: 100%; 
+            box-sizing: border-box; 
+            position: relative; 
+            position: absolute;
         }
 
         .part {
@@ -40,30 +41,35 @@
             cursor: grab
         }
 
-        /* .potatoBody{
-            position: absolute
-        } */
+        #main {
+            float: right; 
+            width: 83%; 
+            height: 100%;
+            position: relative;
+        };
+
+        .potatoBody{
+            z-index: -1;
+        }
     </style>
 </head>
 
 <body>
 
     <div id="parts">
-        <!-- <img class="part" src="potatoeParts/1.png">
-        <img class="part" src="potatoeParts/2NB.png">
-        <img class="part" src="potatoeParts/3NB.png">
-        <img class="part" src="potatoeParts/4NB.png">
-        <img class="part" src="potatoeParts/earsRightNBack.png">
-        <img class="part" src="potatoeParts/earsLeftNBack.png">
-        <img class="part" src="potatoeParts/5NB.png">
-        <img class="part" src="potatoeParts/6NB.png">
-        <img class="part" src="potatoeParts/7NB.png">
-        <img class="part" src="potatoeParts/8NB.png">
-        <img class="part" src="potatoeParts/9.png">
-        <img class="part" src="potatoeParts/10.png"> -->
-        <img class="part" src="potatoeParts/6test.png"> 
-        <img class="part" src="potatoeParts/potatoeBody.png">
+        <img class="part" src="potatoParts/1.png">
+        <img class="part" src="potatoParts/2.png">
+        <img class="part" src="potatoParts/3.png">
+        <img class="part" src="potatoParts/4.png">
+        <img class="part" src="potatoParts/5.png">
+        <img class="part" src="potatoParts/6.png">
+        <img class="part" src="potatoParts/7.png">
+        <img class="part" src="potatoParts/8.png">
+        <img class="part" src="potatoParts/9.png">
+        <img class="part" src="potatoParts/10.png"> 
+        <img class="part" src="potatoParts/potatoBody.png">
     </div>
+    <div id = 'main'></div>
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
     <script src="hw84.js"></script>
