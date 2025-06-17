@@ -1,4 +1,5 @@
 (function () {
+
     console.log('Exercise 1 Variables & Data Types');
 
     let myName = 'Olivia';
@@ -87,15 +88,17 @@
 
         function sumArrayForEach(arr) {
             let sum = 0;
-            arr.forEach(arraysOfNumbers => {
-                sum += arraysOfNumbers;
+            arr.forEach(number => {
+                sum += number;
             });
             return sum;
         }
 
-        const sumForEach = sumArrayForEach(arraysOfNumbers);
+        const sumForEach = sumArrayForEach(arr);
         console.log(sumForEach); // Output: 15
     }
+
+    someNumbers([1, 2, 3, 4, 5]);
 
     function arraySum(array) {
         let total = 0,
@@ -147,13 +150,11 @@
     //     console.log('I appear here after 3 seconds');
     // }, 3000);
 
-
     // setTimeout(confirm, 5000);
-    // setTimeout(print, 8000);
+    // setTimeout(print, 3000);
     // window.open("https://google.com");
     // let promtName = prompt('Whats your name?');
     // console.log(promtName);
-
 
     // for (let i = 0; i < 5; i++) {
     //     setTimeout(() => {
@@ -174,97 +175,69 @@
     // }
 
 
-    const parts = [];
-
-    function loadParts() {
-        const partsContainer = document.querySelector('#parts');
-        const partsContainerWidth = parseInt(getComputedStyle(partsContainer).width);
-
-        const PART_SPACE = 110;
-
-        let x = 0;
-        let y = 0;
-
-        for (let i = 1; i <= 20; i++) {
-            const part = document.createElement('img');
-            part.className = i < 20 ? 'part' : 'part potatoBody';
-            part.src = `potatoParts/${i}.png`;  //image
-            part.style = `top: ${y}px; left: ${x}px`;
-
-            partsContainer.appendChild(part);
-
-            x += PART_SPACE;
-
-            if (x >= partsContainerWidth - PART_SPACE) {
-                x = 0;
-                y += PART_SPACE;
+    (function () {
+        document.getElementById('temperature').addEventListener('input', function () {
+            const celsius = parseFloat(this.value);
+            if (!isNaN(celsius)) {
+                const fahrenheit = Math.round(celsius * (9 / 5) + 32);
+                document.getElementById('name').value = fahrenheit;
+            } else {
+                document.getElementById('name').value = '';
             }
-            parts.push(part);
-        }
-    }
-
-    function saveState() {
-        const partsData = [];
-
-        parts.forEach(part => {
-            const style = getComputedStyle(part);
-            partsData.push({
-                top: style.top,
-                left: style.left,
-                zindex: style.zIndex
-            });
         });
 
-        localStorage.setItem('parts', JSON.stringify(partsData));
-    }
-
-    function loadState() {
-        const partsData = JSON.parse(localStorage.getItem('parts')) || [];
-        partsData.forEach((part, index) => {
-            parts[index].style = `top: ${part.top}; left: ${part.left};
-        z-index: ${part.zindex}`;
-
+        document.getElementById('name').addEventListener('input', function () {
+            const fahrenheit = parseFloat(this.value);
+            if (!isNaN(fahrenheit)) {
+                const celsius = Math.round((fahrenheit - 32) * (5 / 9));
+                document.getElementById('temperature').value = celsius;
+            } else {
+                document.getElementById('temperature').value = '';
+            }
         });
+    }());
 
-        (function () {
-            document.getElementById('temperature').addEventListener('input', function () {
-                const celsius = parseFloat(this.value);
-                if (!isNaN(celsius)) {
-                    const fahrenheit = Math.round(celsius * (9 / 5) + 32);
-                    document.getElementById('name').value = fahrenheit;
-                } else {
-                    document.getElementById('name').value = '';
-                }
-            });
+    // const celsius = 25;
+    // const fahrenheit = celsius * (9 / 5) + 32;
 
-            document.getElementById('name').addEventListener('input', function () {
-                const fahrenheit = parseFloat(this.value);
-                if (!isNaN(fahrenheit)) {
-                    const celsius = Math.round((fahrenheit - 32) * (5 / 9));
-                    document.getElementById('temperature').value = celsius;
-                } else {
-                    document.getElementById('temperature').value = '';
-                }
-            });
-        }());
-
-        // const celsius = 25;
-        // const fahrenheit = celsius * (9 / 5) + 32;
-
-        class Person {
-            constructor(first, last) {
-                this.first = first;
-                this.last = last;
-            }
-            print() {
-                console.log(`${this.first} ${this.last}`);
-            }
+    const personFunctions = {
+        print() {
+            console.log(`I am ${this.first} ${this.last}`);
+        },
+        talk() {
+            console.log(`${this.first} ${this.last} Let's talk!`);
         }
+    };
 
-        // console.log(fahrenheit);
-        const p = new Person('Joe Biden');
-        p.print();
-
+    function createPerson(first, last) {
+        const person = {
+            first,
+            last
+        };
+        Object.assign(person, personFunctions);
+        return person;
     }
+
+    const p1 = createPerson('Liam', 'Carter');
+    const p2 = createPerson('Ava', 'Thompson');
+
+    console.log(p1, p2);
+
+    function person3(first, last) {
+        const person = Object.create(personFunctions);
+        person.first = first;
+        person.last = last;
+        return person;
+    }
+
+    const p5 = person3('Noah', 'Ramirez');
+    p5.talk();
+    p5.print();
+    console.log(p5);
+
+
+    
 
 }());
+
+
