@@ -28,6 +28,6 @@
         }
     });
 
-    const hoo = 'balames'
+    const hoo = 'balames';
 
 }());

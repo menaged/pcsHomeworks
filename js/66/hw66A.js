@@ -9,12 +9,10 @@ userInput = prompt('Give me a degree in celsius:');
 alert('The degrees you gave in celsius are ' + celsius(userInput) + ' in farenheit');
 
 function farenheit(c) {
-    'use strict';
 
     return (c - 32) * 5 / 9;
 }
 function celsius(f) {
-    'use strict';
 
     return (f / 5 * 9 + 32);
 }
